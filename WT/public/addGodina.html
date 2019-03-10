@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>WT projekat, spirala 1</TITLE>
+        <link rel="stylesheet" type="text/css" href="addGodina.css">
+        <meta charset="utf-8">
+        </HEAD>
+    <body onload="addGodinaAjax()">
+    
+    <div id=okvir>
+            <div id=header>
+                    <h1>Dodavanje godine</h1>
+                    <img id=logo src="ariel.jpg" alt="Nema slike"/>
+                    <ul id=meni>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="zadaci.html">Pregled godina</a></li>
+                            <li><a href="addGodina.html">Dodavanje godine</a></li>
+                            <li><a href="studenti.html">Pregled studenata</a></li>
+                            <li><a href="addStudent.html">Dodavanje studenta</a></li>
+                            <li><a href="commiti.html">Pregled commita</a></li>
+                            <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                            <li><a href="addVjezba.html">Dodavanje vjezbe/spirale</a></li>
+                        </ul>
+                </div>
+    <div id=side>
+        <form action="http://localhost:8080/addGodina" method="POST">
+            <p id="unos">Unos godine:</p><br>
+            <label id="godina">Naziv godine</label><br>
+            <input id="n1" name= "nazivGod" type="text"/><br><br>
+            <label id="vjezba">Nazivi repozitorija vjezbe</label><br>
+            <input id="n2" name= "nazivRepVje" type="text"/><br><br>
+            <label id="spirala">Nazivi repozitorija spirale</label><br>
+            <input id="n3" name= "nazivRepSpi" type="text"/><br><br><br>
+            <button id="b1" type="submit">Ponisti</button>
+            <button onclick="addGodinaValidacija();" id="b2" type="submit">Unesi</button>    
+        </form>
+    </div>
+    <div id=glavniSadrzaj>
+        
+    </div>
+        <div id=footer>
+            <p>Web tehnologije 2018/19</p>
+        </div>
+    </div>
+    <div id="mojDivPoruke"> </div>
+    <script src=validacija.js></script>
+    <script src=addGodina.js></script>
+    <script src=GodineAjax.js></script>
+    </body>
+</HTML>

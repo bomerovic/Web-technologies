@@ -1,0 +1,233 @@
+@media(min-width:600px) {
+#okvir {
+    background-color: #f3dcbb;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 35% auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap:0px
+}
+#header {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 10px;
+    margin-top: 10px; 
+}
+h1 {
+    font-size: 30px;
+    font-family: 'Merienda';
+    color:#d3518e;
+    text-align: right;
+    margin-right:20px; 
+}
+img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#footer {
+    grid-column-start: 1;
+    grid-column-end: 3; 
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#d3518e;
+    background-color: #f3dcbb;
+}
+#meni {
+    background-color: #f3dcbb;
+    overflow: hidden;
+    grid-column-start: 1;
+    grid-column-end: 3; 
+}
+#meni ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+#meni li {
+    display: block;
+    float: left;
+    margin: 10px;
+    margin-left: 6px
+}
+
+#side ul {
+    text-align: center;
+    list-style-type: none;
+    overflow-y: scroll;
+    box-shadow: 1px 1px 4px #d3518e;
+    margin:auto;
+    margin-top:50px; 
+    width:60%;  
+    background-color: #FFEFED;
+    height: 150px;
+}
+table {
+    width: 85%;
+    height: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: auto;
+}
+table, th {
+    border:1px solid black;
+    text-align: left;
+}
+table, td {
+    border:1px solid black;
+}
+#glavniSadrzaj {
+    background-color: #e592b8;
+    box-shadow: 1px 1px 4px #d3518e;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    height: 300px;
+    background: url(https://www.hd-background.com/wp-content/uploads/2016/07/desktop-hd-live-wallpaper-rose.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#side {
+    background-color: #F7dbe8;
+    box-shadow: 1px 1px 4px #d3518e;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+#prvired {
+    background-color: #d3518e;
+}
+.ostali {
+    background-color: #e592b8;
+}
+h2 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.s:hover {
+    background-color: 	#92E5BF;
+}
+}
+
+
+@media(max-width:600px) {
+    #okvir {
+        background-color: #f3dcbb;
+        margin: auto;
+        display: grid;
+        grid-gap:0px
+    }
+
+    #header {
+        position: relative;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        margin-left: 10px;
+        margin-top: 10px; 
+    }
+    h1 {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:#d3518e;
+        text-align: right;
+        margin-right:20px; 
+        grid-row:3/4;
+    }
+    img {
+        
+        top: 0px;
+        left: 0px;
+    }
+    #footer {
+        text-align: center;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:#d3518e;
+        background-color: #f3dcbb;
+    }
+    #meni {
+        background-color: #f3dcbb;
+        overflow: hidden;
+    }
+    #meni ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0
+    }
+    
+    #meni li {
+        display: block;
+        float: left;
+        margin: 10px;
+        margin-left: 6px
+    }
+    
+    #side ul {
+        text-align: center;
+        list-style-type: none;
+        overflow-y: scroll;
+        box-shadow: 1px 1px 4px #d3518e;
+        margin:auto;
+        margin-top:30px; 
+        margin-bottom:10px; 
+        width:60%;  
+        background-color: #FFEFED;
+        height: 150px;
+    }
+    table {
+        width: 85%;
+        height: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: auto;
+    }
+    table, th {
+        border:1px solid black;
+        text-align: left;
+    }
+    table, td {
+        border:1px solid black;
+    }
+    #glavniSadrzaj {
+        background-color: #e592b8;
+        box-shadow: 1px 1px 4px #d3518e;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        height: 300px;
+        background: url(https://www.hd-background.com/wp-content/uploads/2016/07/desktop-hd-live-wallpaper-rose.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    #side {
+        background-color: #F7dbe8;
+        box-shadow: 1px 1px 4px #d3518e;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    #prvired {
+        background-color: #d3518e;
+    }
+    .ostali {
+        background-color: #e592b8;
+    }
+    h2 {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    .s:hover {
+        background-color: 	#92E5BF;
+    }
+    }
+    
+    

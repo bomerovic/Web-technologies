@@ -1,0 +1,36 @@
+body {
+    background-color:#e592b8;
+    background: url(https://www.hd-background.com/wp-content/uploads/2016/07/desktop-hd-live-wallpaper-rose.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#login {
+    background-color:#F7dbe8;
+    box-shadow: 1px 1px 4px #d3518e;
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+input[type=text] {
+    margin: 30px;
+    box-shadow: 1px 1px 4px #d3518e;
+}
+input[type=password] {
+    margin: 32px;
+    margin-top: 0;
+    box-shadow: 1px 1px 4px #d3518e;
+}
+form {
+    text-align: center;
+}
+button[id=b] { 
+    border-radius: 8px;
+    background-color: white;
+    color: #d3518e;
+    width: 100px;
+}

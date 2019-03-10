@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>WT projekat, spirala 1</TITLE>
+        <link rel="stylesheet" type="text/css" href="addVjezba.css">
+        <meta charset="utf-8">
+        </HEAD>
+    <body onload="ucitaj();">
+    <div id=okvir>
+        <div id=header>
+            <h1>Dodavanje vjezbe/spirale</h1>
+            <img id=logo src="ariel.jpg" alt="Nema slike"/>
+            <ul id=meni>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="zadaci.html">Pregled godina</a></li>
+                    <li><a href="addGodina.html">Dodavanje godine</a></li>
+                    <li><a href="studenti.html">Pregled studenata</a></li>
+                    <li><a href="addStudent.html">Dodavanje studenta</a></li>
+                    <li><a href="commiti.html">Pregled commita</a></li>
+                    <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                    <li><a href="addVjezba.html">Dodavanje vjezbe/spirale</a></li>
+                </ul>
+        </div>
+    <div id=glavniSadrzaj>
+        <form id=prva name="fPostojeca" method="POST" action="http://localhost:8080/addVjezba">
+            <p id="postojeca">Dodavanje postojece vjezbe/spirale</p><br>
+            <label id="godina1">Godina</label><br>
+            <select id="combobox1" name="sGodine">
+            </select><br><br>
+            <label id="vjezbespirale">Vjezbe/Spirale</label><br>
+            <select id="combobox2" name="sVjezbe">
+            </select><br><br><br>
+            <button id="b1" type="submit">Dodaj</button><br>
+        </form>
+        <form id=druga name="fNova" action="http://localhost:8080/addVjezba" method="POST">
+            <p id="nova">Nova vjezba/spirala</p><br>
+            <label id="nazivvjezbe">Naziv vjezbe</label><br>
+            <input id="nazivV" name= "naziv" type="text"/><br><br>
+            <label id="godina2">Godina</label><br>
+            <select id="combobox3" name="sGodine">
+            </select><br><br>
+            <input type="checkbox" name="spirala">Spirala
+            <button id="b3" type="submit">Dodaj</button><br>
+        </form>
+
+        <form id=treca name="fPoveziZadatak" method="POST" onsubmit="zahtjev()">
+            <p>Dodavanje zadatka na vježbu</p><br>
+            <label>Vjezba</label><br>
+            <select id="combobox4" name="sVjezbe" onchange="zadaci();">
+            </select><br><br>
+            <label>Zadatak</label><br>
+            <select id="combobox5" name="sZadatak">
+            </select><br>
+            <button id="b2" type="submit">Dodaj zadatak</button><br><br><br>
+        </form>
+    </div>
+
+        <div id=footer>
+            <p>Web tehnologije 2018/19</p>
+        </div>
+    </div>
+    <div id="mojDivPoruke">
+
+    </div>
+    <script src=validacija.js></script>
+    <script src=addVjezba.js></script>
+    <script src=SelectGodina.js></script>
+    <script src=SelectZadatak.js></script>
+    <script src=SelectVjezba.js></script>
+    </body>
+</HTML>

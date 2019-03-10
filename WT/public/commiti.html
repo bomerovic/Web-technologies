@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>WT projekat, spirala 1</TITLE>
+        <link rel="stylesheet" type="text/css" href="commiti.css">
+        <meta charset="utf-8">
+        </HEAD>
+    <body>
+    <div id=okvir>
+        <div id=header>
+            <h1>Pregled commita</h1>
+            <img id=logo src="ariel.jpg" alt="Nema slike"/>
+            <ul id=meni>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="zadaci.html">Pregled godina</a></li>
+                    <li><a href="addGodina.html">Dodavanje godine</a></li>
+                    <li><a href="studenti.html">Pregled studenata</a></li>
+                    <li><a href="addStudent.html">Dodavanje studenta</a></li>
+                    <li><a href="commiti.html">Pregled commita</a></li>
+                    <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                    <li><a href="addVjezba.html">Dodavanje vjezbe/spirale</a></li>
+                </ul>
+        </div>
+    <div id=glavni>
+        <p class="tekst">Student: Neko Nekic, 1234</p><br>
+        <p class="tekst">Naziv vjezbe/spirale: Vjezba 1</p><br>
+        <p class="tekst">Repozitorij: <a href="#">Hyperlink</a></p>
+        <form class="forme">
+            <p>Napravi tabelu</p><br>
+            <label class="labele">Broj zadataka: </label> <br>
+            <input id="broj" class="unos" type="number" /> <br><br><br>
+            <button class="dugme" onclick="dodajTabelu()" type="button">Dodaj</button><br>
+        </form>
+        <form class="forme">
+            <p>Dodaj Commit</p><br>
+            <label class="labele" >Redni broj zadatka: </label> <br>
+            <input id="rednibrojzDodaj" class="unos" type="number" /><br>
+            <label class="labele" >Url: </label> <br>
+            <input id="urlDodaj" class="unos" type="text"/><br><br><br>
+            <button class="dugme" onclick="dodajCommit()" type="button">Dodaj</button><br>
+        </form>
+        
+        <form class="forme"> 
+            <p>Edituj Commit</p><br>
+            <label class="labele">Redni broj zadatka: </label><br>
+            <input id="rednibrojzEdit" class="unos" type="number" /> <br>
+            <label class="labele">Redni broj commita: </label><br>
+            <input id="rednibrojcEdit" class="unos" type="number" /><br>
+            <label class="labele">Url: </label><br>
+            <input id="urlEdit" class="unos" type="text"/><br><br><br>
+            <button class="dugme" onclick="editujCommit()" type="button">Edituj</button><br>
+        </form>
+        <form class="forme">
+            <p>Obrisi Commit</p><br>
+            <label class="labele">Redni broj zadatka: </label><br>
+            <input id="rednibrojzObrisi" class="unos" type="number" /> <br>
+            <label class="labele">Redni broj commita: </label><br>
+            <input id="rednibrojcObrisi" class="unos" type="number" /><br><br><br>
+            <button class="dugme" onclick="obrisiCommit()" type="button">Obrisi</button>
+        </form>
+        
+    </div>
+        <div id=footer>
+            <p>Web tehnologije 2018/19</p>
+        </div>
+    </div>
+    <div id="mojDivPoruke"></div>
+    <script src=committabela.js></script>
+    <script src=commiti.js></script>
+    </body>
+    
+</HTML>

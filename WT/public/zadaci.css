@@ -1,0 +1,338 @@
+@media(min-width:600px) {
+#okvir {
+    background-color: #f3dcbb;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 25% auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap:0px
+}
+
+#header {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-left: 10px;
+    margin-top: 10px; 
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Merienda';
+    color:#d3518e;
+    text-align: right;
+    margin-right:150px; 
+}
+h2 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h3 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#footer {
+    grid-column-start: 1;
+    grid-column-end: 4; 
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#d3518e;
+    background-color: #f3dcbb;
+}
+#meni {
+    background-color: #f3dcbb;
+    overflow: hidden;
+    grid-column-start: 1;
+    grid-column-end: 4; 
+}
+#meni ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+#meni li {
+    display: block;
+    float: left;
+    margin: 10px;
+    margin-left: 6px
+}
+
+#godina ul {
+    text-align: center;
+    list-style-type: none;
+    overflow-y: scroll;
+    box-shadow: 1px 1px 4px #d3518e;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:50px; 
+    background-color: #FFEFED;
+    height: 200px;
+}
+#imena ul {
+    text-align: center;
+    list-style-type: none;
+    overflow-y: scroll;
+    box-shadow: 1px 1px 4px #d3518e;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:50px; 
+    background-color: #FFEFED;
+    height: 200px;
+}
+form {
+    text-align: center;
+}
+input[type=text] {
+    margin: 20px;
+    box-shadow: 1px 1px 4px #d3518e;
+
+}
+input[type=password] {
+    margin: 22px;
+    margin-top: 0
+}
+#godina {
+    background-color: #F7dbe8;
+    box-shadow: 1px 1px 4px #d3518e;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+#imena {
+    background-color: #F7dbe8;
+    box-shadow: 1px 1px 4px #d3518e;
+    
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.s:hover {
+    background-color: 	#92E5BF;
+}
+button[id=b] { 
+    border-radius: 8px;
+    background-color: white;
+    color: #d3518e;
+    width: 100px;
+}
+.polovina {
+    margin-right: 5px;
+    margin-bottom:5px; 
+    background-color: #F7dbe8;
+    box-shadow: 1px 1px 4px #d3518e;
+}
+.polovina p {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+.item {
+    height: 50px;
+    width: 100px;
+    background-color: #e592b8;
+    box-shadow: 1px 1px 4px #d3518e;
+    border-radius: 8px;
+    border: 2px outset #d3518e;
+} 
+.polovina ul {
+    list-style-type: none;
+}
+.polovina li {
+    margin: 20px;
+    float: left;
+}
+.folder {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    background-color: #F7dbe8;
+    box-shadow: 1px 1px 4px #d3518e;
+    background: url(https://www.hd-background.com/wp-content/uploads/2016/07/desktop-hd-live-wallpaper-rose.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.folder p {
+    grid-column: 1/4;
+}
+.item:hover {
+    background-color: 	#92E5BF;
+}
+}
+
+@media(max-width:600px) {
+    #okvir {
+        background-color: #f3dcbb;
+        margin: auto;
+        display: grid;
+        grid-gap:0px
+    }
+    
+    #header {
+        position: relative;
+        margin-left: 10px;
+        margin-top: 10px; 
+        display: grid;
+        grid-template-rows: auto auto auto;
+    }
+    
+    h1 {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:#d3518e;
+        text-align: right;
+        margin-right:150px; 
+        grid-row:3/4;
+    }
+    h2 {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    h3 {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    img {
+        top: 0px;
+        left: 0px;
+    }
+    #footer {
+        text-align: center;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:#d3518e;
+        background-color: #f3dcbb;
+    }
+    #meni {
+        background-color: #f3dcbb;
+        overflow: hidden;
+    }
+    #meni ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0
+    }
+    
+    #meni li {
+        display: block;
+        float: left;
+        margin: 10px;
+        margin-left: 6px
+    }
+    
+    #godina ul {
+        text-align: center;
+        list-style-type: none;
+        overflow-y: scroll;
+        box-shadow: 1px 1px 4px #d3518e;
+        margin-left:50px;
+        margin-right:50px;
+        margin-top:50px; 
+        background-color: #FFEFED;
+        height: 200px;
+    }
+    #imena ul {
+        text-align: center;
+        list-style-type: none;
+        overflow-y: scroll;
+        box-shadow: 1px 1px 4px #d3518e;
+        margin-left:50px;
+        margin-right:50px;
+        margin-top:50px; 
+        background-color: #FFEFED;
+        height: 200px;
+    }
+    form {
+        text-align: center;
+    }
+    input[type=text] {
+        margin: 20px;
+        box-shadow: 1px 1px 4px #d3518e;
+    
+    }
+    input[type=password] {
+        margin: 22px;
+        margin-top: 0
+    }
+    #godina {
+        background-color: #F7dbe8;
+        box-shadow: 1px 1px 4px #d3518e;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    #imena {
+        background-color: #F7dbe8;
+        box-shadow: 1px 1px 4px #d3518e;
+        
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .s:hover {
+        background-color: 	#92E5BF;
+    }
+    button[id=b] { 
+        border-radius: 8px;
+        background-color: white;
+        color: #d3518e;
+        width: 100px;
+    }
+    .polovina {
+        margin-right: 5px;
+        margin-bottom:5px; 
+        background-color: #F7dbe8;
+        box-shadow: 1px 1px 4px #d3518e;
+    }
+    .polovina p {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 20px;
+    }
+    .item {
+        height: 50px;
+        width: 100px;
+        background-color: #e592b8;
+        box-shadow: 1px 1px 4px #d3518e;
+        border-radius: 8px;
+        border: 2px outset #d3518e;
+    } 
+    .polovina ul {
+        list-style-type: none;
+    }
+    .polovina li {
+        margin: 20px;
+        float: left;
+    }
+    .folder {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        background-color: #F7dbe8;
+        box-shadow: 1px 1px 4px #d3518e;
+        background: url(https://www.hd-background.com/wp-content/uploads/2016/07/desktop-hd-live-wallpaper-rose.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    .folder p {
+        grid-column: 1/4;
+    }
+    .item:hover {
+        background-color: 	#92E5BF;
+    }
+    }
+    

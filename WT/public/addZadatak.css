@@ -1,0 +1,222 @@
+@media(min-width:600px) {
+#okvir {
+    background-color: #d3518e;
+    margin: auto;
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap:0px;
+    background: url(https://www.hd-background.com/wp-content/uploads/2016/07/desktop-hd-live-wallpaper-rose.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#header {
+    background-color: #f3dcbb;
+}
+h1 {
+    font-size: 30px;
+    font-family: 'Merienda';
+    color:#d3518e;
+    text-align: right;
+    margin-right:100px; 
+    float: right;
+    clear: right;
+}
+img {
+    margin-left: 10px;
+    margin-top: 10px;  
+}
+#footer {
+    grid-column-start: 1;
+    grid-column-end: 2; 
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#d3518e;
+    background-color: #f3dcbb;
+}
+#meni {
+    background-color: #f3dcbb;
+    overflow: hidden;
+    grid-column-start: 1;
+    grid-column-end: 2; 
+}
+#meni ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+#meni li {
+    display: block;
+    float: left;
+    margin: 10px;
+    margin-left: 6px
+}
+#glavniSadrzaj {
+    background-color: #F7dbe8; 
+    box-shadow: 1px 1px 4px #92E5BF; 
+    width: 85%;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form {
+    background-color: #FFEFED;
+    margin-left:300px;
+    margin-right:300px;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 4px #d3518e;
+}
+label[id=novizadatak]
+{
+    margin-left:80px; 
+    
+}
+label[id=nazivzadatka]
+{
+    margin-left:50px; 
+}
+label[id=tekstpostavke]
+{
+    margin-left:50px; 
+}
+label[id=vjezbespirale]
+{
+    margin-left:50px; 
+}
+input[type=text] {
+    margin-left: 50px;
+    box-shadow: 1px 1px 4px #d3518e;
+    
+}
+input[type=file] {
+    margin-left: 50px;
+}
+
+button[id=b2] {
+    margin-left: 180px;
+    margin-bottom: 10px; 
+    border-radius: 8px;
+    background-color: #F7dbe8;
+    color: #d3518e;
+    width: 100px;
+}
+select[id=combobox] {
+    margin-left: 50px;
+}
+}
+
+@media(max-width:600px) {
+    #okvir {
+        background-color: #d3518e;
+        margin: auto;
+        display: grid;
+        grid-gap:0px; 
+        background: url(https://www.hd-background.com/wp-content/uploads/2016/07/desktop-hd-live-wallpaper-rose.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    
+    #header {
+        background-color: #f3dcbb;
+        grid-template-rows: auto auto auto;
+        display: grid;
+    }
+    h1 {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:#d3518e;
+        text-align: right;
+        margin-right:100px; 
+        float: right;
+        clear: right;
+        grid-row:3/4;
+    }
+    img {
+        margin-left: 10px;
+        margin-top: 10px;  
+    }
+    #footer {
+        text-align: center;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:#d3518e;
+        background-color: #f3dcbb;
+    }
+    #meni {
+        background-color: #f3dcbb;
+        overflow: hidden;
+    }
+    #meni ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0
+    }
+    
+    #meni li {
+        display: block;
+        float: left;
+        margin: 10px;
+        margin-left: 6px
+    }
+    #glavniSadrzaj {
+        background-color: #F7dbe8; 
+        box-shadow: 1px 1px 4px #92E5BF; 
+        width: 100%;
+        margin:auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    form {
+        background-color: #FFEFED; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: 1px 1px 4px #d3518e;
+        width: 80%;
+        margin:auto;
+    }
+    label[id=novizadatak]
+{
+    margin-left:80px; 
+    
+}
+label[id=nazivzadatka]
+{
+    margin-left:50px; 
+}
+label[id=tekstpostavke]
+{
+    margin-left:50px; 
+}
+label[id=vjezbespirale]
+{
+    margin-left:50px; 
+}
+input[type=text] {
+    margin-left: 50px;
+    box-shadow: 1px 1px 4px #d3518e;
+    
+}
+input[type=file] {
+    margin-left: 50px;
+}
+
+button[id=b2] {
+    margin-left: 180px;
+    margin-bottom: 10px; 
+    border-radius: 8px;
+    background-color: #F7dbe8;
+    color: #d3518e;
+    width: 100px;
+}
+select[id=combobox] {
+    margin-left: 50px;
+}
+    }
